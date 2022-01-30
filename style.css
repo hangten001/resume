@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 70vh;
+    background-image: url("./images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffccff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    text-transform: uppercase;
+}
+.navbar{
+    max-width: 50%;
+    display: inline;
+}
+.navbar ul li{
+    list-style: none;
+    letter-spacing: 1.5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar ul li a:hover{
+    border: none;
+    border-bottom: 2px solid #000;
+    transition: .5s ease-in-out;
+}
+.sign a{
+    width: 100%;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+.name{
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.name h2{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.name p{
+   font-size: 20px;
+   letter-spacing: 1.5px;
+}
+.banner h3{
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    animation: animate 2s infinite linear;
+    padding-top: 20px;
+}
+@keyframes animate{
+    0%{
+        color: #000;
+        text-shadow: none;
+    }
+    20%{
+        color: #ffccff;
+        text-shadow: none;
+    }
+    40%{
+        color: #6999ff;
+        text-shadow: 0 0 5px #ff4, 0 0 20px #ff6c00;
+    }
+    60%{
+        color: #789;
+        text-shadow: none;
+    }
+    80%{
+        color: #ffccff;
+        text-shadow: none;
+    }
+    100%{
+        color: #6999ff;
+        text-shadow: 0 0 5px #ff4, 0 0 20px #ff6c00;
+    }
+}
+
+/* video section style start here */
+.video{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.video iframe{
+    flex: 1 1 10%;
+    height: 250px;
+    margin: 10px;
+}
+.video h3{
+	animation: animate 2s infinite linear;
+}
+/* footer style start here */
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #ffccff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-icons img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.footer-cpyryt{
+    padding-top: 50px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+@media only screen and (max-width: 700px) {
+    
+    .footer-icons{
+        margin-bottom: -40px;
+    }
+    .footer-cpyryt p{
+        padding-bottom: 20px;
+    }
+  }
